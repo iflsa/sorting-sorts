@@ -40,7 +40,7 @@ function draw() {
     else if (context == 'Quicksort')
         quicksort();
     else if (context == 'Merge Sort') {
-        text("Best: n log n,     Average: n log n,     Worst: n log n,     Memory: n", (50 * wpx) + 110, 60)
+       merge_sort();
 
     } else if (context == 'Insertion Sort') {
         text("Best: n,     Average: n^2,     Worst: n^2,     Memory: 1", (50 * wpx) + 110, 60)
@@ -61,6 +61,9 @@ function draw() {
         text("Best: n,     Average: n * n!,     Worst: ∞,     Memory: 1", (50 * wpx) + 110, 60)
 
     }
+	else if(context = 'Shell Sort'){
+		shell_sort();
+	}
 }
 
 
