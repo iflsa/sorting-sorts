@@ -25,7 +25,6 @@ function setup() {
 
 function draw() {
     background(0);
-
     textSize(32);
     fill('#420690');
     text('Sorting Sorts', 110, 30);
@@ -37,10 +36,10 @@ function draw() {
         drawCredits();
     else if (context == 'Bubble Sort')
         bubble_sort();
-    else if (context == 'Quicksort')
-        quicksort();
+    else if (context == 'Quick Sort') {
+    }
     else if (context == 'Merge Sort') {
-       merge_sort();
+        merge_sort();
 
     } else if (context == 'Insertion Sort') {
         text("Best: n,     Average: n^2,     Worst: n^2,     Memory: 1", (50 * wpx) + 110, 60)
@@ -61,9 +60,12 @@ function draw() {
         text("Best: n,     Average: n * n!,     Worst: ∞,     Memory: 1", (50 * wpx) + 110, 60)
 
     }
-	else if(context = 'Shell Sort'){
-		shell_sort();
-	}
+    else if (context = 'Shell Sort') {
+        shell_sort();
+    }
+    if (context != "Quick Sort") {
+        document.getElementById("quickSort").style.display = "none";
+    }
 }
 
 

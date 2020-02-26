@@ -12,7 +12,12 @@ function drawMenu() {
     button = createButton('Quicksort');
     button.size(btn_width, btn_height);
     button.position(10, (btn_height + 10) * 2);
-    button.mousePressed(() => setSort('Quicksort'));
+    button.mousePressed(() => {
+        document.getElementById("quickSort").style.display = "block";
+        setSort('Quick Sort');
+        document.getElementById("quickSort").contentWindow.location.reload();
+    });
+
 
     button = createButton('Merge Sort');
     button.size(btn_width, btn_height);
