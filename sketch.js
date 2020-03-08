@@ -42,11 +42,9 @@ function draw() {
         merge_sort();
 
     } else if (context == 'Insertion Sort') {
-        text("Best: n,     Average: n^2,     Worst: n^2,     Memory: 1", (50 * wpx) + 110, 60)
-
+        insert_sort();
     } else if (context == 'Selection Sort') {
-        text("Best: n^2,     Average: n^2,     Worst: n^2,     Memory: 1", (50 * wpx) + 110, 60)
-
+        selection_sort();
     } else if (context == 'Bucket Sort') {
         text("Best: -,     Average: n + r,     Worst: n + r,     Memory: n + r", (50 * wpx) + 110, 60)
 
